@@ -1,3 +1,3 @@
 module.exports = {
-    'entry.selectLanguage':'请选择语言',
+    'child.childA.selectLanguage':'请选择语言',
 }
