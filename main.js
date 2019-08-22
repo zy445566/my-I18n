@@ -17,15 +17,16 @@ class MyLocale {
         this.moduleData = moduleData;
     }
     formatMessage(data, params = {}) {
+        let nowLang = this.getLang();
         // params 后续代码支持，暂不支持
         if( moduleData &&
-            moduleData[lang] && 
-            moduleData[lang][data.id]
+            moduleData[nowLang] && 
+            moduleData[nowLang][data.id]
         ) {
-            return runMessage(moduleData[lang][data.id],params)
+            return runMessage(moduleData[nowLang][data.id],params)
         }
-        if(config.base[lang] && config.base[lang][data.id]) {
-            return runMessage(config.base[lang][data.id],params);
+        if(config.base[nowLang] && config.base[nowLang][data.id]) {
+            return runMessage(config.base[nowLang][data.id],params);
         }
         return '';
     }
@@ -35,9 +36,9 @@ class MyLocale {
     setLang(nowLang) {
         return lang = nowLang;
     }
-    changeLang(lang) {
+    changeLang(nowLang) {
         for(let i=0;i<funcList.length;i++) {
-            funcList[i](lang);
+            funcList[i](nowLang);
         }
     }
     addChangeListen(func) {
@@ -65,6 +66,7 @@ function init(nowInstanceFunc, nowBase = {}) {
 }
 
 function getInstance(moduleData={}) {
+    if(isInit) {throw new Error('must be initialized after!');}
     return nowInstanceFunc(new MyLocale(moduleData));
 }
 

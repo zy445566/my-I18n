@@ -1,3 +1,3 @@
 module.exports = {
-    'child.childA.hello':'hello'
+    'entry.selectLanguage':'choose language',
 }
