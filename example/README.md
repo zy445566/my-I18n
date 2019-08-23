@@ -3,5 +3,6 @@
 # run
 ```sh
 cd example
+npm install
 npm run start
 ```
