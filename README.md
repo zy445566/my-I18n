@@ -179,8 +179,8 @@ export default class ChildB extends React.Component {
 | -                 | -                               | -                                                           | -                               |
 |formatMessage      |通过id转换成功国际化文案           |(data: Object(id数据), params:(需要参数的文案需传,可选))       |              void              |
 |getLang            |获取当前选择的语言                 | 无                                                          |              void              |
-|setLang            |设置当前选择的语言                 |(nowLang: String|Object(id数据)                              |              Boolean              |
-|changeLang         |设置当前选择的语言并执行Listen函数  |(nowLang: String|Object(id数据)                             |              void              |
+|setLang            |设置当前选择的语言                 |(nowLang: String\|Object(id数据))                              |              Boolean              |
+|changeLang         |设置当前选择的语言并执行Listen函数  |(nowLang: String\|Object(id数据))                             |              void              |
 |addChangeListen    |添加Listen的函数                  |(func:Function(Listen语言变化的函数))                         |              void              |
 |removeChangeListen |移除Listen的函数                   |(func:Function(Listen语言变化的函数))                        |              void              |
 |clearChangeListen  |清空全部Listen的函数               |无                                                          |              void              |
