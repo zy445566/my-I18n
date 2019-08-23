@@ -21,7 +21,7 @@ import enUS from "./locale/en-US";
 import zhCN from "./locale/zh-CN";
 /**
  * 本国际化方案支持可切入式编程
- * 可改写或在方法的前后进行操作
+ * 可改写实例的方法的前后进行操作
  * 比如本例子修改为localStorage存储
  */
 const langKey = "langStorageKey";
