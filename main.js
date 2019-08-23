@@ -18,8 +18,6 @@ class MyLocale {
     }
     formatMessage(data, params = {}) {
         let nowLang = this.getLang();
-        console.log(this.moduleData,nowLang)
-        // params 后续代码支持，暂不支持
         if( this.moduleData &&
             this.moduleData[nowLang] && 
             this.moduleData[nowLang][data.id]
@@ -38,6 +36,7 @@ class MyLocale {
         return lang = nowLang;
     }
     changeLang(nowLang) {
+        this.setLang(nowLang);
         for(let i=0;i<funcList.length;i++) {
             funcList[i](nowLang);
         }

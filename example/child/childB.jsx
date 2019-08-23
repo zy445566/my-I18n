@@ -1,14 +1,15 @@
 import React from "react";
 import myI18n from "../../main";
+const myI18nInstance = myI18n.getInstance()
 export default class ChildB extends React.Component {
     constructor(props) {
       super(props);
     }
     render() {
       return (
-        <div>
-            B
-        </div>
+        <span>
+            {myI18nInstance.formatMessage({id:'child.childB.dearDaLaoDaiDaiMePlease'},{name:this.props.name})}
+        </span>
       );
     }
   }

@@ -2,6 +2,11 @@ import myI18n from "../main";
 import enUS from "./locale/en-US";
 import zhCN from "./locale/zh-CN";
 const langKey = "langStorageKey";
+/**
+ * 本国际化方案支持可切入式编程
+ * 可改写或在方法的前后进行操作
+ * 比如本例子修改为localStorage存储
+ */
 myI18n.init((myLocale)=>{
     return new Proxy(myLocale,{
     get: function(target, property) {
@@ -14,10 +19,8 @@ myI18n.init((myLocale)=>{
         case 'setLang':
         case 'changeLang':
             return function(nowLang) {
-            if(localStorage.setItem(langKey, nowLang)) {
+                localStorage.setItem(langKey, nowLang);
                 return target[property](nowLang);
-            }
-            return false;
             }
         }
         return target[property];

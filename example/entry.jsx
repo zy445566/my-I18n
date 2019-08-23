@@ -1,19 +1,49 @@
 
 import React from "react";
 import ReactDOM from "react-dom";
-import localeInit from "./localeInit.jsx";// 必须放在入口文件组件上方
+import localeInit from "./localeInit.jsx";// 引用初始化国际化必须在引用需国际化组件上方
 import ChildA from "./child/childA.jsx";
 import ChildB from "./child/childB.jsx";
-
+import myI18n from "../main";
+const myI18nInstance = myI18n.getInstance()
 class App extends React.Component {
   constructor(props) {
     super(props);
+    this.state = {
+      lang:myI18nInstance.getLang(),
+      yourName:'Tom'
+    }
+    document.title = myI18nInstance.formatMessage({id:'entry.title'})
+    // 最外层组件监听语言变化，更新state实现下面子组件变更
+    myI18nInstance.addChangeListen((lang)=>{
+      this.setState({
+        lang: lang
+      });
+      document.title = myI18nInstance.formatMessage({id:'entry.title'})
+    })
   }
+
+  changeName() {
+    return (e)=>{
+      this.setState({
+        yourName: e.target.value
+      });
+    }
+  }
+
   render() {
     return (
       <div>
           <ChildA></ChildA>
-          <ChildB></ChildB>
+          <div>
+          {myI18nInstance.formatMessage({id:'entry.inputYourNamePlease'})}:
+          <input value={this.state.yourName} onChange={this.changeName()}></input>
+          </div>
+          <div>
+            {myI18nInstance.formatMessage({id:'entry.hello'})},
+            <ChildB name={this.state.yourName}></ChildB>
+          </div>
+          
       </div>
     );
   }

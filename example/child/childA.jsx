@@ -11,7 +11,7 @@ export default class ChildA extends React.Component {
     super(props);
     this.state = {
       langList: [{id:'zh-CN',name:'简体中文'},{id:'en-US',name:'English'}],
-      lang: "zh-CN"
+      lang: myI18nInstance.getLang()
     };
   }
   changeLang () {
