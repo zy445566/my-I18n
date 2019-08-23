@@ -1,5 +1,5 @@
 # my-I18n
-I18n for front
+只需引用就可以实现前端国际化的框架(I18n for front)
 
 # 安装
 ```sh
