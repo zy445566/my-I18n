@@ -43,14 +43,16 @@ class MyLocale {
     }
     addChangeListen(func) {
         if(!(func instanceof Function)){throw new Error('this argument must be function');}
-        funcList.push(func);
+        return funcList.push(func);
     }
     removeChangeListen(func) {
         for(let i=0;i<funcList.length;i++) {
             if(func == funcList[i]) {
                 funcList.splice(i,1);
+                return true;
             }
         }
+        return false;
     }
     clearChangeListen() {
         funcList = [];
