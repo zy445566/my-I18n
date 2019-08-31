@@ -1,5 +1,5 @@
 import React from "react";
-import myI18n from "../../main";
+import myI18n from "my-i18n";
 import enUS from "./locale/en-US";
 import zhCN from "./locale/zh-CN";
 const myI18nInstance = myI18n.getInstance({

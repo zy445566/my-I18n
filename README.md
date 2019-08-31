@@ -7,9 +7,9 @@ npm install my-i18n --save
 ```
 
 # 例子
-例子源码地址：[https://github.com/zy445566/my-I18n/tree/master/example](https://github.com/zy445566/my-I18n/tree/master/example)
+例子源码地址：[https://github.com/zy445566/my-I18n/tree/master/example/react](https://github.com/zy445566/my-I18n/tree/master/example/react)
 
-例子展示地址：[https://zy445566.github.io/my-I18n/](https://zy445566.github.io/my-I18n/)
+React例子展示地址：[https://zy445566.github.io/my-I18n/react](https://zy445566.github.io/my-I18n/react)
 
 本例子使用react框架作为例子的演示，理论上上是可支持全部前端框架
 

@@ -5,9 +5,11 @@
   "main": "webpack.config.js",
   "scripts": {
     "start": "npx webpack-dev-server",
+    "build": "npx webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
+    "my-i18n": "^1.0.4",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
   },

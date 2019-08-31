@@ -1,5 +1,5 @@
 import React from "react";
-import myI18n from "../../main";
+import myI18n from "my-i18n";
 const myI18nInstance = myI18n.getInstance()
 export default class ChildB extends React.Component {
     constructor(props) {
