@@ -1,8 +1,8 @@
-# my-I18n/example/react
+# my-I18n/example/vue
 
 # run
 ```sh
-cd example/react
+cd example/vue
 npm install
 npm run start
 ```

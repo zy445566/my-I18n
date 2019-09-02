@@ -1,7 +1,7 @@
 
 import React from "react";
 import ReactDOM from "react-dom";
-import localeInit from "./localeInit.jsx";// 引用初始化国际化必须在引用需国际化组件上方
+import localeInit from "./localeInit.js";// 引用初始化国际化必须在引用需国际化组件上方
 import ChildA from "./child/childA.jsx";
 import ChildB from "./child/childB.jsx";
 import myI18n from "my-i18n";
