@@ -9,7 +9,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "my-i18n": "^1.0.4",
+    "my-i18n": "^1.0.7",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
   },
