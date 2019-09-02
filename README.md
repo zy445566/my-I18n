@@ -8,12 +8,12 @@ npm install my-i18n --save
 
 # 例子
 ### React
-React例子源码地址：[https://github.com/zy445566/my-I18n/tree/master/example/react](https://github.com/zy445566/my-I18n/tree/master/example/react)
+React例子源码地址：[https://github.com/zy445566/zy445566.github.io/tree/master/my-I18n/react](https://github.com/zy445566/zy445566.github.io/tree/master/my-I18n/react)
 
 React例子展示地址：[https://zy445566.github.io/my-I18n/react](https://zy445566.github.io/my-I18n/react)
 
 ### Vue
-Vue例子源码地址：[https://github.com/zy445566/my-I18n/tree/master/example/vue](https://github.com/zy445566/my-I18n/tree/master/example/vue)
+Vue例子源码地址：[https://github.com/zy445566/zy445566.github.io/tree/master/my-I18n/vue](https://github.com/zy445566/zy445566.github.io/tree/master/my-I18n/vue)
 
 Vue例子展示地址：[https://zy445566.github.io/my-I18n/vue](https://zy445566.github.io/my-I18n/vue)
 
