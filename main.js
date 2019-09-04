@@ -54,6 +54,9 @@ class MyLocale {
         }
         return false;
     }
+    getListenNum() {
+        return funcList.length;
+    }
     clearChangeListen() {
         funcList = [];
     }
