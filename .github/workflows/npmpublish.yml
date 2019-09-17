@@ -1,4 +1,4 @@
-name: Node.js Package
+name: my-i18n build&publish
 
 on:
   pull_request:

@@ -1,6 +1,6 @@
 {
   "name": "my-i18n",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "description": "i18n",
   "main": "main.js",
   "scripts": {
@@ -19,9 +19,6 @@
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/zy445566/my-I18n/issues"
-  },
-  "publishConfig": { 
-    "registry": "https://npm.pkg.github.com/@zy445566" 
   },
   "homepage": "https://github.com/zy445566/my-I18n#readme"
 }
