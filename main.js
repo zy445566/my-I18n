@@ -79,5 +79,5 @@ const exportVal = {}
 
 exportVal.getInstance = getInstance;
 exportVal.init = init;
-exports.default = exportVal;
 module.exports = exportVal;
+exports.default = exportVal;

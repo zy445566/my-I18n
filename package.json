@@ -1,6 +1,6 @@
 {
   "name": "my-i18n",
-  "version": "1.0.14",
+  "version": "1.0.15",
   "description": "i18n",
   "main": "main.js",
   "scripts": {
